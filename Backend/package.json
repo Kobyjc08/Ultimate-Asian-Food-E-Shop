@@ -1,0 +1,29 @@
+{
+  "name": "ultimate-asian-food-e-shop",
+  "version": "1.0.0",
+  "description": "A professional e-shop for Asian food articles in Spain. The community of people from Pakistan, India and Bangladesh is growing steadily and will be interested in buying ingredients in an e-shop. In addition, Spanish people will be interested in buying these products to cook this type of food.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+     "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kobyjc08/Ultimate-Asian-Food-E-Shop.git"
+  },
+  "author": "MAR4TEAM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kobyjc08/Ultimate-Asian-Food-E-Shop/issues"
+  },
+  "homepage": "https://github.com/Kobyjc08/Ultimate-Asian-Food-E-Shop#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "pg": "^8.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
