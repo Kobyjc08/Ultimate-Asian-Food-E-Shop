@@ -100,3 +100,176 @@ values ('Shan Chicken Broast Masala',
         2.70,
         'link',
         2)
+INSERT INTO orders (order_date, order_reference, customer_id)
+VALUES ('2019-06-01',
+        'ORD001',
+        1);
+
+
+INSERT INTO orders (order_date, order_reference, customer_id)
+VALUES ('2019-07-15',
+        'ORD002',
+        1);
+
+
+INSERT INTO orders (order_date, order_reference, customer_id)
+VALUES ('2019-07-11',
+        'ORD003',
+        1);
+
+
+INSERT INTO orders (order_date, order_reference, customer_id)
+VALUES ('2019-05-24',
+        'ORD004',
+        2);
+
+
+INSERT INTO orders (order_date, order_reference, customer_id)
+VALUES ('2019-05-30',
+        'ORD005',
+        3);
+
+
+INSERT INTO orders (order_date, order_reference, customer_id)
+VALUES ('2019-07-05',
+        'ORD006',
+        4);
+
+
+INSERT INTO orders (order_date, order_reference, customer_id)
+VALUES ('2019-04-05',
+        'ORD007',
+        4);
+
+
+INSERT INTO orders (order_date, order_reference, customer_id)
+VALUES ('2019-07-23',
+        'ORD008',
+        3);
+
+
+INSERT INTO orders (order_date, order_reference, customer_id)
+VALUES ('2019-07-24',
+        'ORD009',
+        3);
+
+
+INSERT INTO orders (order_date, order_reference, customer_id)
+VALUES ('2019-05-10',
+        'ORD010',
+        2);
+
+-- change order id according to your database
+
+INSERT INTO order_items (order_id, product_id, quantity)
+VALUES(9,
+       2,
+       1);
+
+
+INSERT INTO order_items (order_id, product_id, quantity)
+VALUES(9,
+       7,
+       5);
+
+
+INSERT INTO order_items (order_id, product_id, quantity)
+VALUES(10,
+       8,
+       4);
+
+
+INSERT INTO order_items (order_id, product_id, quantity)
+VALUES(10,
+       11,
+       1);
+
+
+INSERT INTO order_items (order_id, product_id, quantity)
+VALUES(11,
+       2,
+       10);
+
+
+INSERT INTO order_items (order_id, product_id, quantity)
+VALUES(11,
+       1,
+       2);
+
+
+INSERT INTO order_items (order_id, product_id, quantity)
+VALUES(12,
+       4,
+       1);
+
+
+INSERT INTO order_items (order_id, product_id, quantity)
+VALUES(13,
+       1,
+       2);
+
+
+INSERT INTO order_items (order_id, product_id, quantity)
+VALUES(13,
+       10,
+       1);
+
+
+INSERT INTO order_items (order_id, product_id, quantity)
+VALUES(14,
+       9,
+       3);
+
+
+INSERT INTO order_items (order_id, product_id, quantity)
+VALUES(14,
+       6,
+       1);
+
+
+INSERT INTO order_items (order_id, product_id, quantity)
+VALUES(14,
+       11,
+       1);
+
+
+INSERT INTO order_items (order_id, product_id, quantity)
+VALUES(14,
+       9,
+       3);
+
+
+INSERT INTO order_items (order_id, product_id, quantity)
+VALUES(15,
+       8,
+       15);
+
+
+INSERT INTO order_items (order_id, product_id, quantity)
+VALUES(16,
+       1,
+       1);
+
+
+INSERT INTO order_items (order_id, product_id, quantity)
+VALUES(16,
+       5,
+       1);
+
+
+INSERT INTO order_items (order_id, product_id, quantity)
+VALUES(17,
+       3,
+       2);
+
+
+INSERT INTO order_items (order_id, product_id, quantity)
+VALUES(18,
+       4,
+       1);
+
+
+INSERT INTO order_items (order_id, product_id, quantity)
+VALUES(18,
+       6,
+       5);
