@@ -1,3 +1,58 @@
+
+drop table if exists order_items;
+drop table if exists orders;
+drop table if exists customers;
+drop table if exists products;
+drop table if exists categories;
+drop table if exists payment_details;
+
+CREATE TABLE customers ( 
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(50) NOT NULL,
+  user_name VARCHAR(50),
+  password VARCHAR(50),
+  address VARCHAR(120),
+  city VARCHAR(30),
+  country VARCHAR(20)
+  unique ("user_name")
+  );
+CREATE TABLE products ( 
+  id SERIAL PRIMARY KEY,
+  product_name VARCHAR(100) NOT NULL,
+  description VARCHAR(800),
+  unit_price INT NOT NULL,
+  product_pic VARCHAR(200),
+  category_id INT references categories(id)
+  );
+
+CREATE TABLE categories ( 
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(50) NOT NULL
+  );
+
+CREATE TABLE orders ( 
+  id SERIAL PRIMARY KEY,
+  order_date DATE NOT NULL,
+  order_reference VARCHAR(10) NOT NULL,
+  customer_id INT REFERENCES customers(id)
+  );
+
+CREATE TABLE order_items ( 
+  id SERIAL PRIMARY KEY,
+  order_id INT REFERENCES orders(id),
+  product_id INT REFERENCES products(id),
+  quantity INT NOT NULL
+  );
+
+CREATE TABLE payment_details ( 
+  id SERIAL PRIMARY KEY,
+  customers_id INT REFERENCES customers(id),
+  card_number VARCHAR(50) NOT NULL,
+  card_holder_name VARCHAR(50) NOT NULL,
+  card_expiry_date DATE NOT NULL,
+  cvv_code INT NOT NULL
+  );
+
 insert into customers (name, user_name, "password", address, city, country)
 values ('Ehsan',
         'ihsan_raja@live.com',
@@ -162,114 +217,131 @@ VALUES ('2019-05-10',
 -- change order id according to your database
 
 INSERT INTO order_items (order_id, product_id, quantity)
-VALUES(9,
+
+VALUES(1,
        2,
        1);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
-VALUES(9,
+
+VALUES(1,
        7,
        5);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
-VALUES(10,
+
+VALUES(2,
        8,
        4);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
-VALUES(10,
+
+VALUES(2,
        11,
        1);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
-VALUES(11,
+
+VALUES(3,
        2,
        10);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
-VALUES(11,
+
+VALUES(3,
        1,
        2);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
-VALUES(12,
+
+VALUES(4,
        4,
        1);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
-VALUES(13,
+
+VALUES(4,
        1,
        2);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
-VALUES(13,
+
+VALUES(4,
        10,
        1);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
-VALUES(14,
+
+VALUES(5,
        9,
        3);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
-VALUES(14,
+
+VALUES(5,
        6,
        1);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
-VALUES(14,
+
+VALUES(5,
        11,
        1);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
-VALUES(14,
+
+VALUES(5,
        9,
        3);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
-VALUES(15,
+
+VALUES(6,
        8,
        15);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
-VALUES(16,
-       1,
+
+VALUES(6,
+    1,
        1);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
-VALUES(16,
+
+VALUES(6,
        5,
        1);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
-VALUES(17,
+
+VALUES(7,
        3,
        2);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
-VALUES(18,
-       4,
+
+VALUES(8,4,
        1);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
-VALUES(18,
+VALUES(8,
        6,
        5);
