@@ -1,3 +1,4 @@
+
 drop table if exists order_items;
 drop table if exists orders;
 drop table if exists customers;
@@ -51,7 +52,6 @@ CREATE TABLE payment_details (
   card_expiry_date DATE NOT NULL,
   cvv_code INT NOT NULL
   );
-
 
 insert into customers (name, user_name, "password", address, city, country)
 values ('Ehsan',
@@ -217,110 +217,127 @@ VALUES ('2019-05-10',
 -- change order id according to your database
 
 INSERT INTO order_items (order_id, product_id, quantity)
+
 VALUES(1,
        2,
        1);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
+
 VALUES(1,
        7,
        5);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
+
 VALUES(2,
        8,
        4);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
+
 VALUES(2,
        11,
        1);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
+
 VALUES(3,
        2,
        10);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
+
 VALUES(3,
        1,
        2);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
+
 VALUES(4,
        4,
        1);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
+
 VALUES(4,
        1,
        2);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
+
 VALUES(4,
        10,
        1);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
+
 VALUES(5,
        9,
        3);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
+
 VALUES(5,
        6,
        1);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
+
 VALUES(5,
        11,
        1);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
+
 VALUES(5,
        9,
        3);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
+
 VALUES(6,
        8,
        15);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
+
 VALUES(6,
-       1,
+    1,
        1);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
+
 VALUES(6,
        5,
        1);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
+
 VALUES(7,
        3,
        2);
 
 
 INSERT INTO order_items (order_id, product_id, quantity)
-VALUES(8,
-       4,
+
+VALUES(8,4,
        1);
 
 
